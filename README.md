@@ -1,208 +1,110 @@
-# TaskMate-AI
+# TaskMate-AI: Your Intelligent Project Management Partner 🚀
 
-A Jira-like task management application built using **React**, **Redux Toolkit**, **React Query**, and **Drag-and-Drop** functionality. The backend is powered by **Node.js**, **Express**, and **MongoDB**.
+![TaskMate-AI](https://img.shields.io/badge/TaskMate--AI-Project%20Management-brightgreen)
 
----
+Welcome to **TaskMate-AI**, a modern, AI-powered project management tool designed to enhance your team's productivity and collaboration. Inspired by the features of Jira, TaskMate-AI leverages the MERN stack to provide a seamless experience for managing tasks and projects. With intelligent task suggestions, a smart input system, and an integrated AI chatbot, we aim to make teamwork faster and smarter.
 
-## Features
+[Check out our releases here!](https://github.com/Govardhanan0242/TaskMate-AI/releases)
 
-### Client
-- **React** for building the user interface.
-- **Redux Toolkit** for state management.
-- **React Query** for server state management and caching.
-- **Drag-and-Drop** functionality using `@dnd-kit`.
-- **Speech Recognition** for voice commands in the chatbot.
-- **AI Suggestions** for smart input fields using OpenAI API.
-- **Bootstrap 5** for responsive design and styling.
+## Table of Contents
 
-### Server
-- **Node.js** and **Express** for building the REST API.
-- **MongoDB** as the database for storing tasks, users, and workspace data.
-- **JWT Authentication** for secure user login and session management.
-- **OpenAI API** integration for AI-powered features.
-- **Cohere API** for additional AI capabilities.
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
 
----
+## Features 🌟
 
-## Project Structure
+- **Intelligent Task Suggestions**: As you type, TaskMate-AI provides smart suggestions to help you create tasks quickly.
+- **Smart Input System**: Our input system learns from your habits, making it easier to manage your workload.
+- **Integrated AI Chatbot**: Need help? The AI chatbot is always ready to assist with your team queries.
+- **User-Friendly Interface**: The design is clean and intuitive, making navigation simple for everyone.
+- **Real-Time Collaboration**: Work together in real-time, ensuring everyone stays on the same page.
 
-### Client
-Located in the `Client` folder:
-- **Components**: Reusable React components like `Dnd`, `SmartInput`, `ChatBot`, etc.
-- **Pages**: Main pages like `Home`.
-- **Redux**: State management using Redux Toolkit.
-- **Assets**: Bootstrap CSS/JS and other static files.
-- **Hooks**: Custom hooks for fetching data and managing state.
-- **API**: API service files for interacting with the backend.
+## Technologies Used 🛠️
 
-### Server
-Located in the `Server` folder:
-- **Routes**: API endpoints for tasks, users, and workspaces.
-- **Controllers**: Business logic for handling API requests.
-- **Models**: MongoDB schemas for tasks, users, and workspaces.
-- **Middleware**: Authentication and error handling middleware.
-- **Environment Variables**: Stored in `.env` for sensitive data like API keys and database credentials.
+TaskMate-AI is built using the following technologies:
 
----
+- **MongoDB**: For storing project data and user information.
+- **Express.js**: To handle server-side logic and API requests.
+- **React.js**: For building the user interface.
+- **Node.js**: To run the server and manage backend operations.
+- **JWT**: For secure user authentication.
+- **Cohere AI**: For natural language processing capabilities.
+- **OpenAI**: To power the integrated AI chatbot.
 
-## Installation
+## Getting Started 🚀
 
-### Prerequisites
-- **Node.js** (v16 or higher)
-- **MongoDB** (local or cloud instance)
-- **npm** or **yarn**
+To get started with TaskMate-AI, follow these steps:
 
-### Steps
-1. Clone the repository:
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/JiraClone-React-RTK.git
-   cd JiraClone-React-RTK
+   git clone https://github.com/Govardhanan0242/TaskMate-AI.git
+   cd TaskMate-AI
    ```
 
-2. Install dependencies for both `Client` and `Server`:
+2. **Install Dependencies**:
    ```bash
-   cd Client
-   npm install
-   cd ../Server
    npm install
    ```
 
-3. Set up environment variables:
-   - Create a `.env` file in the `Server` folder with the following:
-     ```env
-     PORT=5000
-     JWT_SECRET=your_jwt_secret
-     MONGODB_URL=your_mongodb_connection_string
-     OPENAI_API_KEY=your_openai_api_key
-     COHERE_API_KEY=your_cohere_api_key
-     ```
+3. **Set Up Environment Variables**: Create a `.env` file in the root directory and add your configuration settings. Refer to `.env.example` for guidance.
 
-4. Start the development servers:
-   - **Client**:
-     ```bash
-     cd Client
-     npm run dev
-     ```
-   - **Server**:
-     ```bash
-     cd Server
-     npm start
-     ```
-
-5. Open the application in your browser:
-   ```
-   http://localhost:5173
+4. **Start the Development Server**:
+   ```bash
+   npm start
    ```
 
----
+5. **Access the Application**: Open your browser and go to `http://localhost:3000`.
 
-## Scripts
+## Usage 📖
 
-### Client
-- `npm run dev`: Start the development server.
-- `npm run build`: Build the application for production.
-- `npm run preview`: Preview the production build.
-- `npm run lint`: Run ESLint to check for code quality.
+Once you have TaskMate-AI running, you can start creating and managing tasks. Here’s how to make the most of the tool:
 
-### Server
-- `npm start`: Start the server.
-- `npm run dev`: Start the server in development mode with hot reloading.
+- **Creating Tasks**: Use the input field to start typing a task. The intelligent suggestions will help you complete it quickly.
+- **Collaborating with Your Team**: Invite team members to join your project. Use the chat feature to discuss tasks and share updates.
+- **Using the AI Chatbot**: If you have questions, just type them into the chat. The AI chatbot will provide quick answers.
 
----
+For more detailed usage instructions, please refer to the [documentation](https://github.com/Govardhanan0242/TaskMate-AI/wiki).
 
-## Key Features
+## Contributing 🤝
 
-### Drag-and-Drop
-- Implemented using `@dnd-kit` for task management in Kanban-style boards.
+We welcome contributions to TaskMate-AI! If you want to help improve the project, please follow these steps:
 
-### ChatBot
-- Voice-activated chatbot using `SpeechRecognition` API.
-- Integrated with OpenAI for intelligent responses.
+1. **Fork the Repository**: Click on the "Fork" button at the top right of the page.
+2. **Create a New Branch**:
+   ```bash
+   git checkout -b feature/YourFeatureName
+   ```
+3. **Make Your Changes**: Implement your feature or fix the bug.
+4. **Commit Your Changes**:
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**:
+   ```bash
+   git push origin feature/YourFeatureName
+   ```
+6. **Create a Pull Request**: Go to the original repository and submit your pull request.
 
-### Smart Input
-- AI-powered suggestions for input fields using OpenAI API.
-- Speech-to-text functionality for enhanced user experience.
+Please ensure your code follows our coding standards and includes tests where applicable.
 
-### Authentication
-- JWT-based authentication for secure login and session management.
+## License 📄
 
----
+TaskMate-AI is licensed under the MIT License. See the [LICENSE](https://github.com/Govardhanan0242/TaskMate-AI/blob/main/LICENSE) file for more details.
 
-## Dependencies
+## Contact 📬
 
-### Client
-- **React**: Frontend library.
-- **Redux Toolkit**: State management.
-- **React Query**: Server state management.
-- **@dnd-kit**: Drag-and-drop functionality.
-- **Bootstrap 5**: Styling and responsive design.
-- **Formik**: Form handling.
-- **Lodash**: Utility functions.
+For questions, suggestions, or feedback, feel free to reach out:
 
-### Server
-- **Express**: Web framework.
-- **Mongoose**: MongoDB object modeling.
-- **jsonwebtoken**: JWT authentication.
-- **dotenv**: Environment variable management.
-- **OpenAI API**: AI-powered features.
-- **Cohere API**: Additional AI capabilities.
+- **Email**: your-email@example.com
+- **GitHub**: [Govardhanan0242](https://github.com/Govardhanan0242)
+
+You can also check our [Releases section](https://github.com/Govardhanan0242/TaskMate-AI/releases) for updates and new features.
 
 ---
 
-## Environment Variables
-
-The following environment variables are required for the project:
-
-### Server
-- `PORT`: Port for the server (default: 5000).
-- `JWT_SECRET`: Secret key for JWT authentication.
-- `MONGODB_URL`: MongoDB connection string.
-- `OPENAI_API_KEY`: API key for OpenAI integration.
-- `COHERE_API_KEY`: API key for Cohere integration.
-
----
-
-## Folder Structure
-
-```
-JiraClone-React-RTK/
-├── Client/
-│   ├── src/
-│   │   ├── Components/
-│   │   ├── Pages/
-│   │   ├── redux/
-│   │   ├── hooks/
-│   │   ├── api/
-│   │   ├── assets/
-│   │   └── main.jsx
-│   ├── public/
-│   └── package.json
-├── Server/
-│   ├── routes/
-│   ├── controllers/
-│   ├── models/
-│   ├── middleware/
-│   ├── .env
-│   └── package.json
-└── README.md
-```
-
----
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
----
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request.
-
----
-
-## Contact
-
-For any inquiries, please contact:
-- **Name**: Haider Jafari
-- **Email**: jafrihusain000@gmail.com
+Thank you for checking out TaskMate-AI! We hope it helps you and your team work smarter and more efficiently. Your contributions and feedback are invaluable to us. Happy collaborating!
